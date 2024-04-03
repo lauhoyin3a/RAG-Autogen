@@ -13,7 +13,11 @@ load_dotenv()
 
 config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST")
 SERP_API_KEY = os.getenv("SERP_API_KEY")
-
+llm_config = {
+    "timeout": 60,
+    "temperature": 0,
+    "config_list": config_list,
+}
 def add_data_resources(rag_agent, data_source):
     rag_agent._retrieve_config['docs_path'].append(data_source)
 
@@ -52,24 +56,24 @@ def agent_report_search(rag_agent):
     for report in os.listdir('data/report'):
         add_data_resources(rag_agent, os.path.join("data/report", report))
 
-
+def termination_msg(x):
+    return isinstance(x, dict) and "TERMINATE" == str(x.get("content", ""))[-9:].upper()
 
 def main():
-
-    def reset_agents():
-        assistant.reset()
-        ragreportagent.reset()
-        internetagent.reset()
-
     # Receive user input
-    user_input = input("Choose the agent to perform market analysis\n"
-                       "1. RAG agent with existing PDF report\n"
-                       "2. RAG agent with internet search ability\n\nPlease Enter 1 or 2:\n")
+
+    boss = autogen.UserProxyAgent(
+        name="Boss",
+        is_termination_msg=termination_msg,
+        human_input_mode="ALWAYS",
+        code_execution_config=False,  # we don't want to execute code in this case.
+        description="The boss who ask questions and give tasks.",
+    )
 
     # Create RetrieveAssistantAgent instance named "assistant"
     assistant = RetrieveAssistantAgent(
         name="assistant",
-        system_message="You are a helpful assistant.",
+        system_message="ask internetagent for context if you do not have enough infomation",
         llm_config={
             "timeout": 600,
             "cache_seed": 42,
@@ -77,9 +81,9 @@ def main():
         },
     )
 
-    # Create RetrieveUserProxyAgent instance named "ragreportagent" to read financial reports and answer questions
-    ragreportagent = RetrieveUserProxyAgent(
-        name="ragreportagent",
+    # Create RetrieveUserProxyAgent instance named "ragproxyagent"
+    ragproxyagent = RetrieveUserProxyAgent(
+        name="ragproxyagent",
         human_input_mode="ALWAYS",
         max_consecutive_auto_reply=3,
         retrieve_config={
@@ -90,16 +94,18 @@ def main():
             "model": config_list[0]["model"],
             "client": chromadb.PersistentClient(path="/tmp/chromadb"),
             "embedding_model": "all-mpnet-base-v2",
+            "collection_name": "groupchat",
             "get_or_create": True,
         },
         code_execution_config=False,
+        description="Assistant who has extra content retrieval pdf file for solving difficult problems.",
     )
 
-    # Create RetrieveUserProxyAgent instance named "ragreportagent" to google search and answer questions
     internetagent = RetrieveUserProxyAgent(
         name="internetagent",
         human_input_mode="NEVER",
         max_consecutive_auto_reply=3,
+        system_message="You are a extra content retrieval assistant, you are able to retrieval json file online for solving difficult problems.",
         retrieve_config={
             "task": "code",
             "docs_path": [],
@@ -113,31 +119,28 @@ def main():
         code_execution_config=False,
     )
 
-    # Decide which logic to run based on user input
-    valid_input = False
-    while not valid_input:
-        user_input = input("Please enter your choice (1 or 2): ")
-        if user_input == "1":
-            assistant.reset()
-            ragreportagent.reset()
-            qa_problem = input("Please enter the question: ")
-            agent_report_search(ragreportagent)
+    def _reset_agents():
+        boss.reset()
+        assistant.reset()
+        ragproxyagent.reset()
+        internetagent.reset()
 
-            ragreportagent.initiate_chat(assistant, message=ragreportagent.message_generator, problem=qa_problem)
+    def rag_chat():
+        _reset_agents()
+        groupchat = autogen.GroupChat(
+            agents=[assistant, internetagent], messages=[], max_round=12, speaker_selection_method="round_robin"
+        )
+        manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=llm_config)
+        qa_problem = input("Please Enter The Question: ")
+        agent_report_search(ragproxyagent)
 
-            valid_input = True
-        elif user_input == "2":
-            assistant.reset()
-            ragreportagent.reset()
-            internetagent.reset()
-            qa_problem = input("Please enter the question: ")
-            agent_google_search(internetagent, qa_problem)
+        # Start chatting with boss_aid as this is the user proxy agent.
+        ragproxyagent.initiate_chat(
+            manager,
+            message=ragproxyagent.message_generator,
+            problem=qa_problem,
+            n_results=3,
+        )
 
-            internetagent.initiate_chat(assistant, message=internetagent.message_generator, problem=qa_problem)
-
-            valid_input = True
-        else:
-            print("Invalid input. Please enter a valid option.")
-
-if __name__ == "__main__":
-    main()
+    rag_chat()
+main()
