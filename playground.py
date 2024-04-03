@@ -42,9 +42,10 @@ ragproxyagent = RetrieveUserProxyAgent(
     retrieve_config={
         "task": "code",
         "docs_path": [
-            #os.path.join(os.path.abspath(""), "..", "website", "docs"),
-            #os.path.join("data", "global-equity-views.pdf"),
-            os.path.join("data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
+            #os.path.join("data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
+            #os.path.join("data", "2024-03-25-Morgan Stanley-Asia Quantitative Strategy Biweekly Perspectives Rising Signs Of Marke...-107204434.pdf"),
+            #os.path.join("data", "2024-03-25-Morgan Stanley-US Equity Strategy Weekly Warm-up Great Expectations Suggest More Rota...-107204697.pdf"),
+            os.path.join("data", "result.json"),
         ],
         "custom_text_types": ["mdx"],
         "chunk_token_size": 2000,
@@ -58,6 +59,7 @@ ragproxyagent = RetrieveUserProxyAgent(
 
 # reset the assistant. Always reset the assistant before starting a new conversation.
 assistant.reset()
-
-qa_problem = "What's the overall recommendation related to global equity strategies? based on the reports"
-ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem=qa_problem)
+ragproxyagent._retrieve_config['docs_path'].append(os.path.join("data", "1234.json"),)
+print(ragproxyagent._retrieve_config)
+#qa_problem = "What's your overall recommendation related to global equity strategies?"
+#ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem=qa_problem)
