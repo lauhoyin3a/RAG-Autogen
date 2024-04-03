@@ -38,7 +38,7 @@ def call_serpapi(query):
             json_data = response.json()
             filename = f"{query}_result.json"
             filename = re.sub(r'[\\/*?:"<>|]', '_', filename)
-            filepath = os.path.join("data/google_results", filename)  # Update filepath to include the "data" directory
+            filepath = os.path.join("data/google", filename)  # Update filepath to include the "data" directory
             with open(filepath, 'w') as file:
                 json.dump(json_data, file, indent=4)
             print(f"Search results saved to {filepath}")
@@ -60,11 +60,6 @@ def main():
         assistant.reset()
         ragreportagent.reset()
         internetagent.reset()
-
-    # Receive user input
-    user_input = input("Choose the agent to perform market analysis\n"
-                       "1. RAG agent with existing PDF report\n"
-                       "2. RAG agent with internet search ability\n\nPlease Enter 1 or 2:\n")
 
     # Create RetrieveAssistantAgent instance named "assistant"
     assistant = RetrieveAssistantAgent(
@@ -98,7 +93,7 @@ def main():
     # Create RetrieveUserProxyAgent instance named "ragreportagent" to google search and answer questions
     internetagent = RetrieveUserProxyAgent(
         name="internetagent",
-        human_input_mode="NEVER",
+        human_input_mode="ALWAYS",
         max_consecutive_auto_reply=3,
         retrieve_config={
             "task": "code",
@@ -114,30 +109,36 @@ def main():
     )
 
     # Decide which logic to run based on user input
-    valid_input = False
+    user_input = input("Choose the agent to perform market analysis\n"
+                       "1. RAG agent with existing PDF report\n"
+                       "2. RAG agent with internet search ability\n\nPlease Enter 1 or 2:\n")
+
+    valid_input = user_input in ("1", "2")
     while not valid_input:
+
         user_input = input("Please enter your choice (1 or 2): ")
-        if user_input == "1":
-            assistant.reset()
-            ragreportagent.reset()
-            qa_problem = input("Please enter the question: ")
-            agent_report_search(ragreportagent)
+        valid_input = user_input in ("1", "2")
 
-            ragreportagent.initiate_chat(assistant, message=ragreportagent.message_generator, problem=qa_problem)
-
-            valid_input = True
-        elif user_input == "2":
-            assistant.reset()
-            ragreportagent.reset()
-            internetagent.reset()
-            qa_problem = input("Please enter the question: ")
-            agent_google_search(internetagent, qa_problem)
-
-            internetagent.initiate_chat(assistant, message=internetagent.message_generator, problem=qa_problem)
-
-            valid_input = True
-        else:
+        if not valid_input:
             print("Invalid input. Please enter a valid option.")
+
+    # RAG search from report
+    if user_input == "1":
+        assistant.reset()
+        ragreportagent.reset()
+        qa_problem = input("Please enter the question: ")
+        agent_report_search(ragreportagent)
+        ragreportagent.initiate_chat(assistant, message=ragreportagent.message_generator, problem=qa_problem)
+
+    # RAG search from google
+    elif user_input == "2":
+        assistant.reset()
+        ragreportagent.reset()
+        internetagent.reset()
+        qa_problem = input("Please enter the question: ")
+        agent_google_search(internetagent, qa_problem)
+        internetagent.initiate_chat(assistant, message=internetagent.message_generator, problem=qa_problem)
+
 
 if __name__ == "__main__":
     main()

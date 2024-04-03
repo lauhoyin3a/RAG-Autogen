@@ -11,7 +11,7 @@ import chromadb
 
 load_dotenv()
 
-config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+config_list = autogen.config_list_from_json(env_or_file="../OAI_CONFIG_LIST")
 SERP_API_KEY = os.getenv("SERP_API_KEY")
 
 def add_data_resources(rag_agent, data_source):
@@ -25,7 +25,7 @@ def get_google_search_url(topic, engine, api_key, output_format):
 
 def agent_google_search(rag_agent, topic):
     retrieve_content = call_serpapi(topic)
-    add_data_resources(rag_agent, os.path.join("data", retrieve_content))
+    add_data_resources(rag_agent, os.path.join("../data", retrieve_content))
 
 
 def call_serpapi(query):
@@ -44,7 +44,7 @@ def call_serpapi(query):
             json_data = response.json()
             filename = f"{query}_result.json"
             filename = re.sub(r'[\\/*?:"<>|]', '_', filename)
-            filepath = os.path.join("data", filename)  # Update filepath to include the "data" directory
+            filepath = os.path.join("../data", filename)  # Update filepath to include the "data" directory
             with open(filepath, 'w') as file:
                 json.dump(json_data, file, indent=4)
             print(f"Search results saved to {filepath}")

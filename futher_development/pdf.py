@@ -9,7 +9,7 @@ from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProx
 from autogen.retrieve_utils import TEXT_FORMATS
 
 
-config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+config_list = autogen.config_list_from_json(env_or_file="../OAI_CONFIG_LIST")
 
 assert len(config_list) > 0
 print("models to use: ", [config_list[i]["model"] for i in range(len(config_list))])
@@ -34,9 +34,9 @@ ragproxyagent = RetrieveUserProxyAgent(
     retrieve_config={
         "task": "code",
         "docs_path": [
-            os.path.join("data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
-            os.path.join("data", "2024-03-25-Morgan Stanley-Asia Quantitative Strategy Biweekly Perspectives Rising Signs Of Marke...-107204434.pdf"),
-            os.path.join("data", "2024-03-25-Morgan Stanley-US Equity Strategy Weekly Warm-up Great Expectations Suggest More Rota...-107204697.pdf"),
+            os.path.join("../data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
+            os.path.join("../data", "2024-03-25-Morgan Stanley-Asia Quantitative Strategy Biweekly Perspectives Rising Signs Of Marke...-107204434.pdf"),
+            os.path.join("../data", "2024-03-25-Morgan Stanley-US Equity Strategy Weekly Warm-up Great Expectations Suggest More Rota...-107204697.pdf"),
         ],
         "custom_text_types": ["mdx"],
         "chunk_token_size": 2000,

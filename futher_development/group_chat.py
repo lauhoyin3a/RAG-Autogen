@@ -11,7 +11,7 @@ from autogen.retrieve_utils import TEXT_FORMATS
 
 load_dotenv()
 
-config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+config_list = autogen.config_list_from_json(env_or_file="../OAI_CONFIG_LIST")
 SERP_API_KEY = os.getenv("SERP_API_KEY")
 llm_config = {
     "timeout": 60,
@@ -24,7 +24,7 @@ def add_data_resources(rag_agent, data_source):
 
 def agent_google_search(rag_agent, topic):
     retrieve_content = call_serpapi(topic)
-    add_data_resources(rag_agent, os.path.join("data", retrieve_content))
+    add_data_resources(rag_agent, os.path.join("../data", retrieve_content))
 
 def call_serpapi(query):
     api_key = os.getenv("SERP_API_KEY")
@@ -53,8 +53,8 @@ def call_serpapi(query):
         print("Error: ", e)
 
 def agent_report_search(rag_agent):
-    for report in os.listdir('data/report'):
-        add_data_resources(rag_agent, os.path.join("data/report", report))
+    for report in os.listdir('../data/report'):
+        add_data_resources(rag_agent, os.path.join("../data/report", report))
 
 def termination_msg(x):
     return isinstance(x, dict) and "TERMINATE" == str(x.get("content", ""))[-9:].upper()
