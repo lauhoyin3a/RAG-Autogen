@@ -1,0 +1,294 @@
+{
+    "search_metadata": {
+        "id": "660d185495bf928eb262ba1c",
+        "status": "Success",
+        "json_endpoint": "https://serpapi.com/searches/30ef6162bce1b183/660d185495bf928eb262ba1c.json",
+        "created_at": "2024-04-03 08:50:28 UTC",
+        "processed_at": "2024-04-03 08:50:28 UTC",
+        "google_url": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&sourceid=chrome&ie=UTF-8",
+        "raw_html_file": "https://serpapi.com/searches/30ef6162bce1b183/660d185495bf928eb262ba1c.html",
+        "total_time_taken": 1.91
+    },
+    "search_parameters": {
+        "engine": "google",
+        "q": "Which regions / sectors are the most attractive curerntly and why?",
+        "google_domain": "google.com",
+        "device": "desktop"
+    },
+    "search_information": {
+        "query_displayed": "Which regions / sectors are the most attractive curerntly and why?",
+        "total_results": 771000000,
+        "time_taken_displayed": 0.34,
+        "organic_results_state": "Some results for exact spelling but showing fixed spelling",
+        "spelling_fix": "Which regions / sectors are the most attractive currently and why?",
+        "showing_results_for": "Which regions / sectors are the most attractive currently and why?"
+    },
+    "related_questions": [
+        {
+            "question": "What is the best country to invest in right now?",
+            "title": "Best Countries to Invest In | U.S. News",
+            "link": "https://www.usnews.com/news/best-countries/best-countries-to-invest-in",
+            "list": [
+                "Singapore. #1 in Invest In Rankings. #4 out of 85 in 2022. ... ",
+                "United States. #2 in Invest In Rankings. ... ",
+                "Japan. #3 in Invest In Rankings. ... ",
+                "South Korea. #4 in Invest In Rankings. ... ",
+                "China. #5 in Invest In Rankings. ... ",
+                "Germany. #6 in Invest In Rankings. ... ",
+                "United Arab Emirates. #7 in Invest In Rankings. ... ",
+                "Switzerland. #8 in Invest In Rankings."
+            ],
+            "displayed_link": "https://www.usnews.com \u203a News \u203a Best Countries",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIGJlc3QgY291bnRyeSB0byBpbnZlc3QgaW4gcmlnaHQgbm93PyIsImxrIjoiR2k5M2FHRjBJR2x6SUhSb1pTQmlaWE4wSUdOdmRXNTBjbmtnZEc4Z2FXNTJaWE4wSUdsdUlISnBaMmgwSUc1dmR3IiwiYnMiOiJjNVhQTVFyQ01CUUdZQnhjTW9sVEtZSlAxRTFRZTRHdWpnNUM1eGlmVFNoTklIbHQ2QTA4am9meEpKN0FWSXRVQk1FdEpOXzc4MzRtMlNhVG5FQTVJSWx3UkVjZ1RLWEpOa0FHbEs3Ykc2WEJxbHdTYU9QVDZEWkp0dkhhX3pmR2RneWVQNVc4UU5kaEZVNmN5SEpCcXNZMHVsZkpMSjc2MzR6dDJTS1REWENMZ0NYYVhPazhjRnNnZmFaZHhza3ludnRBdjFtWTdTVWUyQ3FUU3NoM2gzNnZzN0hneUlnQ2dqLUZsRFM2RHRzOVAxcTNxbnRfYVRjYVBBQSIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIGJlc3QgY291bnRyeSB0byBpbnZlc3QgaW4gcmlnaHQgbm93PyIsImxrIjoiR2k5M2FHRjBJR2x6SUhSb1pTQmlaWE4wSUdOdmRXNTBjbmtnZEc4Z2FXNTJaWE4wSUdsdUlISnBaMmgwSUc1dmR3IiwiYnMiOiJjNVhQTVFyQ01CUUdZQnhjTW9sVEtZSlAxRTFRZTRHdWpnNUM1eGlmVFNoTklIbHQ2QTA4am9meEpKN0FWSXRVQk1FdEpOXzc4MzRtMlNhVG5FQTVJSWx3UkVjZ1RLWEpOa0FHbEs3Ykc2WEJxbHdTYU9QVDZEWkp0dkhhX3pmR2RneWVQNVc4UU5kaEZVNmN5SEpCcXNZMHVsZkpMSjc2MzR6dDJTS1REWENMZ0NYYVhPazhjRnNnZmFaZHhza3ludnRBdjFtWTdTVWUyQ3FUU3NoM2gzNnZzN0hneUlnQ2dqLUZsRFM2RHRzOVAxcTNxbnRfYVRjYVBBQSIsImlkIjoiZmNfMSJ9"
+        },
+        {
+            "question": "What makes countries attractive?",
+            "snippet": "The quality of the local environment, of local government and public services, and the overall quality of life are all signals to potential residents that a region is an attractive proposition.",
+            "title": "What makes a region attractive in the new global environment ...",
+            "link": "https://www.oecd.org/regional/Issues-note%20-region-attractive-new-global-environment.pdf",
+            "displayed_link": "https://www.oecd.org \u203a regional \u203a Issues-note -reg...",
+            "source_logo": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/e10ac001c1b41a940c5669781b7bfe115fa705fe3bb2698ef0a178a1fbd84686.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoYXQgbWFrZXMgY291bnRyaWVzIGF0dHJhY3RpdmU/IiwibGsiOiJHaDkzYUdGMElHMWhhMlZ6SUdOdmRXNTBjbWxsY3lCaGRIUnlZV04wYVhabCIsImJzIjoiYzVYUE1RckNNQlFHWUJ4Y01vbFRLWUpQMUUxUWU0R3VqZzVDNXhpZlRTaE5JSGx0NkEwOGpvZnhKSjdBVkl0VUJNRXRKTl83ODM0bTJTYVRuRUE1SUlsd1JFY2dUS1hKTmtBR2xLN2JHNlhCcWx3U2FPUFQ2RFpKdHZIYV96ZkdkZ3llUDVXOFFOZGhGVTZjeUhKQnFzWTB1bGZKTEo3NjM0enQyU0tURFhDTGdDWGFYT2s4Y0ZzZ2ZhWmR4c2t5bnZ0QXYxbVk3U1VlMkNxVFNzaDNoMzZ2czdIZ3lJZ0Nnai1GbERTNkR0czlQMXEzcW50X2FUY2FQQUEiLCJpZCI6ImZjXzEifQ==",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoYXQgbWFrZXMgY291bnRyaWVzIGF0dHJhY3RpdmU%2FIiwibGsiOiJHaDkzYUdGMElHMWhhMlZ6SUdOdmRXNTBjbWxsY3lCaGRIUnlZV04wYVhabCIsImJzIjoiYzVYUE1RckNNQlFHWUJ4Y01vbFRLWUpQMUUxUWU0R3VqZzVDNXhpZlRTaE5JSGx0NkEwOGpvZnhKSjdBVkl0VUJNRXRKTl83ODM0bTJTYVRuRUE1SUlsd1JFY2dUS1hKTmtBR2xLN2JHNlhCcWx3U2FPUFQ2RFpKdHZIYV96ZkdkZ3llUDVXOFFOZGhGVTZjeUhKQnFzWTB1bGZKTEo3NjM0enQyU0tURFhDTGdDWGFYT2s4Y0ZzZ2ZhWmR4c2t5bnZ0QXYxbVk3U1VlMkNxVFNzaDNoMzZ2czdIZ3lJZ0Nnai1GbERTNkR0czlQMXEzcW50X2FUY2FQQUEiLCJpZCI6ImZjXzEifQ%3D%3D"
+        },
+        {
+            "question": "Why are emerging markets attractive?",
+            "snippet": "Emerging markets are often attractive to foreign investors due to the high return on investment they can provide. In the transition from being an agriculture-based economy to a developed economy, countries often require a large influx of capital from foreign sources due to a shortage of domestic capital.",
+            "title": "Emerging Markets - Definiton, How it Works, Examples",
+            "link": "https://corporatefinanceinstitute.com/resources/economics/emerging-markets/#:~:text=Emerging%20markets%20are%20often%20attractive,a%20shortage%20of%20domestic%20capital.",
+            "displayed_link": "https://corporatefinanceinstitute.com \u203a economics \u203a emer...",
+            "source_logo": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/e10ac001c1b41a940c5669781b7bfe11e140b6120f0c3ec0a2d26217c22f84a8.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoeSBhcmUgZW1lcmdpbmcgbWFya2V0cyBhdHRyYWN0aXZlPyIsImxrIjoiR2lOM2FIa2daVzFsY21kcGJtY2diV0Z5YTJWMGN5QmhjbVVnWVhSMGNtRmpkR2wyWlEiLCJicyI6ImM1WFBNUXJDTUJRR1lCeGNNb2xUS1lKUDFFMVFlNEd1amc1QzV4aWZUU2hOSUhsdDZBMDhqb2Z4Sko3QVZJdFVCTUV0Sk5fNzgzNG0yU2FUbkVBNUlJbHdSRWNnVEtYSk5rQUdsSzdiRzZYQnFsd1NhT1BUNkRaSnR2SGFfemZHZGd5ZVA1VzhRTmRoRlU2Y3lISkJxc1kwdWxmSkxKNzYzNHp0MlNLVERYQ0xnQ1hhWE9rOGNGc2dmYVpkeHNreW52dEF2MW1ZN1NVZTJDcVRTc2gzaDM2dnM3SGd5SWdDZ2otRmxEUzZEdHM5UDFxM3FudF9hVGNhUEFBIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoeSBhcmUgZW1lcmdpbmcgbWFya2V0cyBhdHRyYWN0aXZlPyIsImxrIjoiR2lOM2FIa2daVzFsY21kcGJtY2diV0Z5YTJWMGN5QmhjbVVnWVhSMGNtRmpkR2wyWlEiLCJicyI6ImM1WFBNUXJDTUJRR1lCeGNNb2xUS1lKUDFFMVFlNEd1amc1QzV4aWZUU2hOSUhsdDZBMDhqb2Z4Sko3QVZJdFVCTUV0Sk5fNzgzNG0yU2FUbkVBNUlJbHdSRWNnVEtYSk5rQUdsSzdiRzZYQnFsd1NhT1BUNkRaSnR2SGFfemZHZGd5ZVA1VzhRTmRoRlU2Y3lISkJxc1kwdWxmSkxKNzYzNHp0MlNLVERYQ0xnQ1hhWE9rOGNGc2dmYVpkeHNreW52dEF2MW1ZN1NVZTJDcVRTc2gzaDM2dnM3SGd5SWdDZ2otRmxEUzZEdHM5UDFxM3FudF9hVGNhUEFBIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "Which country is the best for stock trading?",
+            "snippet": "According to the Credit Suisse Global Investment Returns Yearbook 2023, since 1900, South Africa has been the best-performing stock market in terms of real USD, with an annualized real return (taking into account the loss of purchasing power due to inflation) of 7.0%, followed very closely by Australia with 6.7% and ...",
+            "title": "The best countries to invest in the stock market - MarketScreener",
+            "date": "Dec 18, 2023",
+            "link": "https://in.marketscreener.com/news/latest/The-best-countries-to-invest-in-the-stock-market-45591406/#:~:text=According%20to%20the%20Credit%20Suisse,by%20Australia%20with%206.7%25%20and",
+            "displayed_link": "https://in.marketscreener.com \u203a news \u203a latest \u203a The-best-...",
+            "source_logo": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/e10ac001c1b41a940c5669781b7bfe114a0c3368f3103002d7e559ad1efe695c.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoaWNoIGNvdW50cnkgaXMgdGhlIGJlc3QgZm9yIHN0b2NrIHRyYWRpbmc/IiwibGsiOiJHaDlpWlhOMElHTnZkVzUwY25rZ1ptOXlJSFJ5WVdScGJtY2djM1J2WTJ0eiIsImJzIjoiYzVYUE1RckNNQlFHWUJ4Y01vbFRLWUpQMUUxUWU0R3VqZzVDNXhpZlRTaE5JSGx0NkEwOGpvZnhKSjdBVkl0VUJNRXRKTl83ODM0bTJTYVRuRUE1SUlsd1JFY2dUS1hKTmtBR2xLN2JHNlhCcWx3U2FPUFQ2RFpKdHZIYV96ZkdkZ3llUDVXOFFOZGhGVTZjeUhKQnFzWTB1bGZKTEo3NjM0enQyU0tURFhDTGdDWGFYT2s4Y0ZzZ2ZhWmR4c2t5bnZ0QXYxbVk3U1VlMkNxVFNzaDNoMzZ2czdIZ3lJZ0Nnai1GbERTNkR0czlQMXEzcW50X2FUY2FQQUEiLCJpZCI6ImZjXzEifQ==",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdGVIbG9VRXhHT0ZKRE1FWkhYelJoYkdkeVJWZHRSV3R6WVVKVVZXNXJhVlpqWTFGQ1dEVk1YMVpWUTJWSFpVSjFRMDlzVWsxVmVGVldVVFY1T0dwaGRESTRSbDlPRWhkV1VtZE9XbkZQUmtweVQycHdkRkZRYWpaTGJEWkJieG9pUVZCWWFHMDFXUzFWTUZKSWFtVmtRVVZyWHpsYVZGZFFRbTlYUW1OdFdVVkRRUSIsImZjdiI6IjMiLCJlaSI6IlZSZ05acU9GSnJPanB0UVBqNktsNkFvIiwicWMiOiJjd1hCc1EyQU1Bd0VRR29xUnZnaDZET0xaU3djQ1JMSmZvZ29HSWtkdVp2TDhLcU9zTDMybGtoVDlraElHT2lHc3ljaFpJaXkzZ2E5SXF6eGVDQnR3X0JubWQ2dnJPVUgiLCJxdWVzdGlvbiI6IldoaWNoIGNvdW50cnkgaXMgdGhlIGJlc3QgZm9yIHN0b2NrIHRyYWRpbmc%2FIiwibGsiOiJHaDlpWlhOMElHTnZkVzUwY25rZ1ptOXlJSFJ5WVdScGJtY2djM1J2WTJ0eiIsImJzIjoiYzVYUE1RckNNQlFHWUJ4Y01vbFRLWUpQMUUxUWU0R3VqZzVDNXhpZlRTaE5JSGx0NkEwOGpvZnhKSjdBVkl0VUJNRXRKTl83ODM0bTJTYVRuRUE1SUlsd1JFY2dUS1hKTmtBR2xLN2JHNlhCcWx3U2FPUFQ2RFpKdHZIYV96ZkdkZ3llUDVXOFFOZGhGVTZjeUhKQnFzWTB1bGZKTEo3NjM0enQyU0tURFhDTGdDWGFYT2s4Y0ZzZ2ZhWmR4c2t5bnZ0QXYxbVk3U1VlMkNxVFNzaDNoMzZ2czdIZ3lJZ0Nnai1GbERTNkR0czlQMXEzcW50X2FUY2FQQUEiLCJpZCI6ImZjXzEifQ%3D%3D"
+        }
+    ],
+    "organic_results": [
+        {
+            "position": 1,
+            "title": "Strategic sector investments are poised to benefit ...",
+            "link": "https://www.brookings.edu/articles/strategic-sector-investments-are-poised-to-benefit-distressed-us-counties/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.brookings.edu/articles/strategic-sector-investments-are-poised-to-benefit-distressed-us-counties/&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECCAQAQ",
+            "displayed_link": "https://www.brookings.edu \u203a articles \u203a strategic-sector-i...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d390577cdc03a70dcd3a1ffb798c36e768.png",
+            "date": "Feb 13, 2024",
+            "snippet": "Strategic sector investments are much more likely than private investment overall to target economically distressed counties, relative to recent ...",
+            "snippet_highlighted_words": [
+                "sector",
+                "more"
+            ],
+            "source": "Brookings"
+        },
+        {
+            "position": 2,
+            "title": "Issues-note -region-attractive-new-global-environment. ...",
+            "link": "https://www.oecd.org/regional/Issues-note%20-region-attractive-new-global-environment.pdf",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oecd.org/regional/Issues-note%2520-region-attractive-new-global-environment.pdf&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECB8QAQ",
+            "displayed_link": "https://www.oecd.org \u203a regional \u203a Issues-note -reg...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d3d3159e417f87cd9dcd39ac447a6c40af.png",
+            "snippet": "Regional attractiveness profiles are an innovative tool enabling policy makers to capture the unique assets, and the potential gaps, for individual regions.",
+            "snippet_highlighted_words": [
+                "Regional",
+                "regions"
+            ],
+            "source": "OECD"
+        },
+        {
+            "position": 3,
+            "title": "The emerging markets and regions that offer the most ...",
+            "link": "https://www.linkedin.com/pulse/emerging-markets-regions-offer-most",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/pulse/emerging-markets-regions-offer-most&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECCIQAQ",
+            "displayed_link": "10 months ago",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d35114ed799e71de5ed8f5dd39dc87ee44.png",
+            "snippet": "Asia has several emerging markets that are attractive for international business, such as China, India, Indonesia, Vietnam, and the Philippines.",
+            "snippet_highlighted_words": [
+                "attractive"
+            ],
+            "source": "LinkedIn \u00b7 Eucl\u00e9a Business School Middle East"
+        },
+        {
+            "position": 4,
+            "title": "WHAT MAKES A REGION ATTRACTIVE IN THE NEW ...",
+            "link": "https://www.oecd.org/regional/Presentations-regional-attractiveness.pdf",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oecd.org/regional/Presentations-regional-attractiveness.pdf&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDUQAQ",
+            "displayed_link": "https://www.oecd.org \u203a regional \u203a Presentations-re...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d39a619b2e56c055bf1f999ef1529911c9.png",
+            "date": "Nov 29, 2021",
+            "snippet": "... sectors as a percentage of total employment ... CURRENT EXPENDITURE OF MUNICIPALITIES FOR ... o \u201cMacro-objectives\u201d associated to the most relevant ...",
+            "snippet_highlighted_words": [
+                "sectors",
+                "CURRENT",
+                "most"
+            ],
+            "source": "OECD"
+        },
+        {
+            "position": 5,
+            "title": "Outlook on Emerging Markets",
+            "link": "https://www.lazardassetmanagement.com/research-insights/outlooks/emerging-markets",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lazardassetmanagement.com/research-insights/outlooks/emerging-markets&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDoQAQ",
+            "displayed_link": "https://www.lazardassetmanagement.com \u203a outlooks \u203a e...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d38a6818ffe31b99e5ad0d2c5a6af57b57.png",
+            "date": "Jan 9, 2024",
+            "snippet": "We believe emerging markets (EM) equities are becoming ever more attractive as it remains one of the most mispriced asset classes globally ...",
+            "snippet_highlighted_words": [
+                "more attractive"
+            ],
+            "source": "Lazard Asset Management"
+        },
+        {
+            "position": 6,
+            "title": "Promising sectors in the southeast of the US - United States",
+            "link": "https://www.netherlandsandyou.nl/web/united-states/about-us/consulate-general-atlanta/promising-sectors-southeast",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.netherlandsandyou.nl/web/united-states/about-us/consulate-general-atlanta/promising-sectors-southeast&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDMQAQ",
+            "displayed_link": "https://www.netherlandsandyou.nl \u203a web \u203a about-us \u203a p...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d344d8af487d70641a32fadab9a6dc3411.png",
+            "snippet": "The region is home to many headquarters of large corporations such as Coca-Cola, Delta Airlines, Home Depot, Lowe's (both active in home improvement), Duke ...",
+            "snippet_highlighted_words": [
+                "region"
+            ],
+            "source": "Netherlands and you"
+        },
+        {
+            "position": 7,
+            "title": "The Best and Worst Performing Sectors in 2023",
+            "link": "https://www.visualcapitalist.com/best-and-worst-performing-sectors-in-2023/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.visualcapitalist.com/best-and-worst-performing-sectors-in-2023/&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDYQAQ",
+            "displayed_link": "https://www.visualcapitalist.com \u203a best-and-worst-perfo...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d3234f549e03846283b86ecd08b5b631bf.png",
+            "date": "Jan 2, 2024",
+            "snippet": "Here are the best performing sectors of 2023\u2014and the ones that fell behind\u2014in a year defined by AI, high interest rates, and resilience.",
+            "snippet_highlighted_words": [
+                "best",
+                "sectors"
+            ],
+            "source": "Visual Capitalist"
+        },
+        {
+            "position": 8,
+            "title": "Best Countries to Invest In",
+            "link": "https://www.usnews.com/news/best-countries/best-countries-to-invest-in",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.usnews.com/news/best-countries/best-countries-to-invest-in&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDQQAQ",
+            "displayed_link": "https://www.usnews.com \u203a News \u203a Best Countries",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d37cfd9d4fb361fced5b1f547f1629d1d5.png",
+            "snippet": "U.S. News ranks which countries are the best for investing. See which countries made the list.",
+            "snippet_highlighted_words": [
+                "which countries",
+                "best",
+                "which countries"
+            ],
+            "source": "U.S. News & World Report"
+        },
+        {
+            "position": 9,
+            "title": "Most attractive countries to invest post-Covid? China, South ...",
+            "link": "https://mediaroom.iese.edu/most-attractive-countries-to-invest-post-covid-china-south-korea-and-france-enter-top-10-for-first-time/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mediaroom.iese.edu/most-attractive-countries-to-invest-post-covid-china-south-korea-and-france-enter-top-10-for-first-time/&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDcQAQ",
+            "displayed_link": "https://mediaroom.iese.edu \u203a most-attractive-countries-to...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d316a542b15268c303fdf1a0200d134287.png",
+            "date": "Jul 7, 2021",
+            "snippet": "In terms of regions, North America, Australasia and Western Europe are the most attractive for capital allocations, as the heat map below shows.",
+            "snippet_highlighted_words": [
+                "regions",
+                "most attractive"
+            ],
+            "source": "IESE Business School"
+        },
+        {
+            "position": 10,
+            "title": "The world's most attractive locations for global services",
+            "link": "https://www.consultancy.eu/news/9217/the-worlds-most-attractive-locations-for-global-services",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.consultancy.eu/news/9217/the-worlds-most-attractive-locations-for-global-services&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0QFnoECDgQAQ",
+            "displayed_link": "https://www.consultancy.eu \u203a news \u203a the-worlds-most-a...",
+            "favicon": "https://serpapi.com/searches/660d185495bf928eb262ba1c/images/34778c980ecb98008ca048b2142116d31a16d3fcd3e686b7f50d221823b48418.png",
+            "date": "Jul 24, 2023",
+            "snippet": "Though India, China, and Malaysia take the top positions in a list of the most desirable countries for business services due to offshoring, ...",
+            "snippet_highlighted_words": [
+                "most desirable countries"
+            ],
+            "source": "Consultancy.eu"
+        }
+    ],
+    "related_searches": [
+        {
+            "block_position": 1,
+            "query": "Which regions sectors are the most attractive currently and why qui",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Which+regions+sectors+are+the+most+attractive+currently+and+why+qui&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgyEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+sectors+are+the+most+attractive+currently+and+why+qui"
+        },
+        {
+            "block_position": 1,
+            "query": "emerging markets stocks today",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Emerging+markets+stocks+today&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgxEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Emerging+markets+stocks+today"
+        },
+        {
+            "block_position": 1,
+            "query": "emerging markets outlook 2024",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Emerging+markets+outlook+2024&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgwEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Emerging+markets+outlook+2024"
+        },
+        {
+            "block_position": 1,
+            "query": "emerging market countries",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Emerging+market+countries&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgvEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Emerging+market+countries"
+        },
+        {
+            "block_position": 1,
+            "query": "why are emerging markets underperforming",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Why+are+emerging+markets+underperforming&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgtEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Why+are+emerging+markets+underperforming"
+        },
+        {
+            "block_position": 1,
+            "query": "best emerging countries to invest in",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Best+emerging+countries+to+invest+in&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgsEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Best+emerging+countries+to+invest+in"
+        },
+        {
+            "block_position": 1,
+            "query": "best emerging market etf",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Best+emerging+market+ETF&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgrEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Best+emerging+market+ETF"
+        },
+        {
+            "block_position": 1,
+            "query": "developed vs emerging markets allocation",
+            "link": "https://www.google.com/search?sca_esv=77a235444057b71d&q=Developed+vs+emerging+markets+allocation&sa=X&ved=2ahUKEwjjg8KE1aWFAxWzkYkEHQ9RCa0Q1QJ6BAgqEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Developed+vs+emerging+markets+allocation"
+        }
+    ],
+    "pagination": {
+        "current": 1,
+        "next": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=10&sourceid=chrome&ie=UTF-8",
+        "other_pages": {
+            "2": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=10&sourceid=chrome&ie=UTF-8",
+            "3": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=20&sourceid=chrome&ie=UTF-8",
+            "4": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=30&sourceid=chrome&ie=UTF-8",
+            "5": "https://www.google.com/search?q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&oq=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=40&sourceid=chrome&ie=UTF-8"
+        }
+    },
+    "serpapi_pagination": {
+        "current": 1,
+        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=10",
+        "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=10",
+        "other_pages": {
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Which+regions+%2F+sectors+are+the+most+attractive+curerntly+and+why%3F&start=40"
+        }
+    }
+}

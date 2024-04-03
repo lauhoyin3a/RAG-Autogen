@@ -1,19 +1,36 @@
-import os
-from dotenv import load_dotenv
-import requests
 import json
+import os
+import re
+import requests
+from dotenv import load_dotenv
+from autogen.agentchat.contrib.retrieve_assistant_agent import RetrieveAssistantAgent
+from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
+from autogen.retrieve_utils import TEXT_FORMATS
+import autogen
+import chromadb
 
-# Load environment variables from .env file
 load_dotenv()
+
+config_list = autogen.config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+
+def add_data_resources(rag_agent, data_source):
+
+    rag_agent._retrieve_config['docs_path'].append(data_source)
+
+def get_google_search_url(topic, engine, api_key, output_format):
+    serp_url = "https://serpapi.com/search"
+    search_url = f"{serp_url}?q={topic}&engine={engine}&api_key={api_key}&output={output_format}"
+    return search_url
+
+def agent_google_search(rag_agent, topic):
+    retrieve_content = call_serpapi(topic)
+    add_data_resources(rag_agent, os.path.join("data", retrieve_content))
 
 
 def call_serpapi(query):
     api_key = os.getenv("SERP_API_KEY")
-
-    # Define the base URL for the SerpApi
     base_url = "https://serpapi.com/search"
-
-    # Set the query parameters
     params = {
         'q': query,
         'engine': 'google',
@@ -22,29 +39,58 @@ def call_serpapi(query):
     }
 
     try:
-        # Send a GET request to the SerpApi
         response = requests.get(base_url, params=params)
-
-        # Check if the request was successful (status code 200)
         if response.status_code == 200:
-            # Retrieve and parse the JSON response
             json_data = response.json()
-
-            # Save the JSON response to a file
-            filename = "search_results.json"
-            with open(filename, 'w') as file:
+            filename = f"{query}_result.json"
+            filename = re.sub(r'[\\/*?:"<>|]', '_', filename)
+            filepath = os.path.join("data", filename)  # Update filepath to include the "data" directory
+            with open(filepath, 'w') as file:
                 json.dump(json_data, file, indent=4)
-
-            print(f"Search results saved to {filename}")
+            print(f"Search results saved to {filepath}")
+            return filepath
         else:
-            # Handle any errors
             print("Error: ", response.status_code)
-
     except requests.RequestException as e:
-        # Handle connection errors
         print("Error: ", e)
 
+# Create RetrieveAssistantAgent instance named "assistant"
+assistant = RetrieveAssistantAgent(
+    name="assistant",
+    system_message="You are a helpful assistant.",
+    llm_config={
+        "timeout": 600,
+        "cache_seed": 42,
+        "config_list": config_list,
+    },
+)
 
-# Example usage
-query = "What's your overall recommendation related to global equity strategies"
-call_serpapi(query)
+# Create RetrieveUserProxyAgent instance named "ragproxyagent"
+ragproxyagent = RetrieveUserProxyAgent(
+    name="ragproxyagent",
+    human_input_mode="NEVER",
+    max_consecutive_auto_reply=3,
+    retrieve_config={
+        "task": "code",
+        "docs_path": [],
+        "custom_text_types": ["mdx"],
+        "chunk_token_size": 2000,
+        "model": config_list[0]["model"],
+        "client": chromadb.PersistentClient(path="/tmp/chromadb"),
+        "embedding_model": "all-mpnet-base-v2",
+        "get_or_create": True,
+    },
+    code_execution_config=False,
+)
+
+# Add data sources to the RetrieveUserProxyAgent
+qa_problem = "Any specific companies to increase allocation for portfolio and why?"
+agent_google_search(ragproxyagent, qa_problem)
+#retrieve_content = call_serpapi(qa_problem)
+#ragproxyagent._retrieve_config['docs_path'].append(os.path.join('data', retrieve_content))
+
+# Reset the assistant before starting a new conversation
+assistant.reset()
+
+# Initiate the chat between the assistant and the user proxy agent
+ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem=qa_problem)
