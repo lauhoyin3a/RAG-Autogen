@@ -84,10 +84,8 @@ ragproxyagent = RetrieveUserProxyAgent(
 )
 
 # Add data sources to the RetrieveUserProxyAgent
-qa_problem = "Any specific companies to increase allocation for portfolio and why?"
+qa_problem = input("Please Enter The Question: ")
 agent_google_search(ragproxyagent, qa_problem)
-#retrieve_content = call_serpapi(qa_problem)
-#ragproxyagent._retrieve_config['docs_path'].append(os.path.join('data', retrieve_content))
 
 # Reset the assistant before starting a new conversation
 assistant.reset()

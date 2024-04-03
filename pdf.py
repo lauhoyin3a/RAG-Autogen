@@ -26,15 +26,7 @@ assistant = RetrieveAssistantAgent(
 )
 
 # 2. create the RetrieveUserProxyAgent instance named "ragproxyagent"
-# By default, the human_input_mode is "ALWAYS", which means the agent will ask for human input at every step. We set it to "NEVER" here.
-# `docs_path` is the path to the docs directory. It can also be the path to a single file, or the url to a single file. By default,
-# it is set to None, which works only if the collection is already created.
-# `task` indicates the kind of task we're working on. In this example, it's a `code` task.
-# `chunk_token_size` is the chunk token size for the retrieve chat. By default, it is set to `max_tokens * 0.6`, here we set it to 2000.
-# `custom_text_types` is a list of file types to be processed. Default is `autogen.retrieve_utils.TEXT_FORMATS`.
-# This only applies to files under the directories in `docs_path`. Explicitly included files and urls will be chunked regardless of their types.
-# In this example, we set it to ["mdx"] to only process markdown files. Since no mdx files are included in the `websit/docs`,
-# no files there will be processed. However, the explicitly included urls will still be processed.
+
 ragproxyagent = RetrieveUserProxyAgent(
     name="ragproxyagent",
     human_input_mode="NEVER",
@@ -42,10 +34,9 @@ ragproxyagent = RetrieveUserProxyAgent(
     retrieve_config={
         "task": "code",
         "docs_path": [
-            #os.path.join("data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
-            #os.path.join("data", "2024-03-25-Morgan Stanley-Asia Quantitative Strategy Biweekly Perspectives Rising Signs Of Marke...-107204434.pdf"),
-            #os.path.join("data", "2024-03-25-Morgan Stanley-US Equity Strategy Weekly Warm-up Great Expectations Suggest More Rota...-107204697.pdf"),
-            os.path.join("data", "result.json"),
+            os.path.join("data", "2024-03-25-JPMorgan-Equity Strategy Equity PE multiples in historical context - earnings vs...-107204257.pdf"),
+            os.path.join("data", "2024-03-25-Morgan Stanley-Asia Quantitative Strategy Biweekly Perspectives Rising Signs Of Marke...-107204434.pdf"),
+            os.path.join("data", "2024-03-25-Morgan Stanley-US Equity Strategy Weekly Warm-up Great Expectations Suggest More Rota...-107204697.pdf"),
         ],
         "custom_text_types": ["mdx"],
         "chunk_token_size": 2000,
@@ -58,8 +49,7 @@ ragproxyagent = RetrieveUserProxyAgent(
 )
 
 # reset the assistant. Always reset the assistant before starting a new conversation.
+qa_problem = input("Please Enter The Question: ")
 assistant.reset()
-ragproxyagent._retrieve_config['docs_path'].append(os.path.join("data", "1234.json"),)
-print(ragproxyagent._retrieve_config)
 #qa_problem = "What's your overall recommendation related to global equity strategies?"
-#ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem=qa_problem)
+ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem=qa_problem)
