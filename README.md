@@ -12,13 +12,13 @@ Enter your OPENAI_API_KEY and SERP_API_KEY in a separate .env file.
 
 Create a new file named .env in the project directory.
 
-Open the .env file and add the following lines, 
-
-replacing <OPENAI_API_KEY> and <SERP_API_KEY> with your actual API keys:
+Open the .env file  and replacing <OPENAI_API_KEY> and <SERP_API_KEY> with your actual API keys:
 
 OPENAI_API_KEY=<your_openai_api_key>
 
 SERP_API_KEY=<your_serp_api_key>
+
+Open the OAI_CONFIG_LIST and replacing <OPENAI_API_KEY> 
 
 [Optional] Create and activate a virtual environment or conda environment.
 
